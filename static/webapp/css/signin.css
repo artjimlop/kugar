@@ -1,0 +1,63 @@
+body {
+    padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.start-streaming{
+    background-color: #FFF;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% auto;
+    color: #FFF;
+
+}
+
+.main-container{
+    text-align:center;
+    margin-right:auto;
+    margin-left:auto;
+    vertical-align: middle;
+
+}
+
+.main-logo{
+    position: relative;
+    margin-top: 10%;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.form-signin {
+  position: relative;
+  text-align:center;
+  max-width: 35%;
+  padding: 25px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="search"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.lehmann{
+    color: #04588e;
+}
