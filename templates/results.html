@@ -1,48 +1,7 @@
+{% extends "base.html" %}
 {% load static from staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-        <link rel="shortcut icon" href="{% static 'webapp/img/favicon.ico' %}">
-		<title>Kugar: {{ query }}</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="{% static 'webapp/css/bootstrap.min.css' %}" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="{% static 'webapp/css/styles.css' %}" rel="stylesheet">
-	</head>
-	<body>
-<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="{% url 'main' %}">
-        <img class="navbar-logo" src="{% static 'webapp/img/krok.png' %}"/>
-      </a>
-    </div>
-    <div class="navbar-collapse collapse" id="navbar-collapsible">
-      <form class="navbar-form" action="/results/" method="get">
-        <div class="form-group" style="display:inline;">
-          <div class="input-group" style="border-left: 5px solid transparent;">
-            <input type="text" class="form-control" placeholder="{{ query }}" name="srch-term" id="srch-term">
-            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</nav>
 
-    <section class="container-fluid" id="section1">
+{% block container %}
     {% if feeds %}
         {% for feed in feeds %}
         <div class="rc" data-hveid="58">
@@ -73,44 +32,5 @@
         </td>
         </div>
     {% endif %}
-    </section>
-<footer id="footer">
-  <div class="container-fluid">
-    <div class="row">    
-      <div class="col-xs-6 col-sm-6 col-md-3 column">          
-          <h4>Information</h4>
-          <ul class="nav">
-            <li><a href="about-us.html">Legal disclaimer</a></li>
-          </ul> 
-        </div>
-      <div class="col-xs-6 col-md-3 column">          
-          <h4>Follow Us</h4>
-          <ul class="nav">
-            <li><a href="#">Twitter</a></li>
-          </ul> 
-      </div>
-      <div class="col-xs-6 col-md-3 column">          
-          <h4>Contact Us</h4>
-          <ul class="nav">
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Support</a></li>
-          </ul> 
-      </div>
-      <div class="col-xs-6 col-md-3 column">          
-          <h4>Customer Service</h4>
-          <ul class="nav">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-          </ul> 
-      </div>
-    </div><!--/row-->
-  </div>
-</footer>
 
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
-</html>
+{% endblock %}

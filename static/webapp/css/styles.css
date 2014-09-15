@@ -119,3 +119,28 @@ footer .nav>li>a:hover {
     text-align:center;
     padding-top:10%;
 }
+
+.terms-and-conditons-panel h3 {
+    margin-top: 50px;
+}
+
+.terms-title {
+    max-height: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: #168ccc;
+    font-size: 3em;
+}
+
+.terms-content-title {
+    color: #CC3E27;
+    margin: 5px 0 10px;
+}
+
+.terms-text-soft {
+    padding-right: 40px;
+    text-align: justify;
+    word-wrap: break-word;
+    color: #5a5a5a;
+}

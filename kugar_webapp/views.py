@@ -8,6 +8,8 @@ from models import Feedkik
 def main(request):
     return render(request, 'main.html')
 
+def terms_and_conditions(request):
+    return render(request, 'terms_and_conditions.html')
 
 def search(keywords):
     search_results = []
