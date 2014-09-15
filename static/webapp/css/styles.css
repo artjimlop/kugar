@@ -105,3 +105,17 @@ footer .nav>li>a:hover {
     background-color:transparent;
 	color:#fff;
 }
+
+.torrent_seeds{
+    color: #006621;
+}
+
+.torrent_peers{
+    color: #DD4B39;
+}
+
+.not_found{
+    position: relative;
+    text-align:center;
+    padding-top:10%;
+}
